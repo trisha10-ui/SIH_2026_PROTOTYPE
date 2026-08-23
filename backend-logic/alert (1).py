@@ -86,7 +86,7 @@ def main():
     print("Stress Level:", level)
 
     # Write score to file
-    with open("/tmp/score.txt", "w") as f:
+    with open("score.txt", "w") as f:
 
         f.write("Name: " + name + "\n")
         f.write("Message: " + message + "\n")
@@ -94,7 +94,7 @@ def main():
         f.write("Stress Level: " + level + "\n")
 
     # Escalation logic
-    with open("/tmp/alert.txt", "w") as f:
+    with open("alert.txt", "w") as f:
 
         if level == "High":
 
