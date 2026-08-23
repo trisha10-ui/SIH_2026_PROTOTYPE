@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NHAA | Officer Command Center</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+        <div class="brand">
+
+            <div class="brand-logo">N</div>
+
+            <div>
+                <h2>NHAA</h2>
+                <span>Officer Command Center</span>
+            </div>
+
+        </div>
+
+
+        <nav>
+
+    <a class="nav-item active" id="dashboardNav">
+        <span>▦</span>
+        Dashboard
+    </a>
+
+    <a class="nav-item" id="priorityNav">
+        <span>⚑</span>
+        Priority Cases
+    </a>
+
+    <a class="nav-item" id="historyNav">
+        <span>◷</span>
+        Review History
+    </a>
+
+</nav>
+
+
+        <div class="human-card">
+
+            <div class="human-icon">👮</div>
+
+            <div>
+
+                <strong>Human-in-the-Loop</strong>
+
+                <p>
+                    Final decisions remain with officers.
+                </p>
+
+            </div>
+
+            <div class="online-dot"></div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN -->
+
+    <main class="main">
+
+        <!-- TOP BAR -->
+
+        <header class="topbar">
+
+            <div>
+
+                <p class="eyebrow">NATIONAL HELPLINE ASSISTANCE</p>
+
+                <h1>Officer Dashboard</h1>
+
+                <p class="subtitle">
+                    AI-assisted distress identification & case prioritization
+                </p>
+
+            </div>
+
+
+            <div class="system-status">
+
+                <span class="status-dot"></span>
+
+                <div>
+                    <strong>System Online</strong>
+                    <small>AI monitoring active</small>
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- STAT CARDS -->
+
+        <section class="stats">
+
+            <div class="stat-card">
+
+                <div class="stat-icon blue">◉</div>
+
+                <div>
+
+                    <span>Total Cases</span>
+
+                    <strong id="totalCases">0</strong>
+
+                    <small>Processed today</small>
+
+                </div>
+
+            </div>
+
+
+            <div class="stat-card danger">
+
+                <div class="stat-icon red">⚠</div>
+
+                <div>
+
+                    <span>High Priority</span>
+
+                    <strong id="highCases">0</strong>
+
+                    <small>Needs attention</small>
+
+                </div>
+
+            </div>
+
+
+            <div class="stat-card warning">
+
+                <div class="stat-icon yellow">!</div>
+
+                <div>
+
+                    <span>Medium Priority</span>
+
+                    <strong id="mediumCases">0</strong>
+
+                    <small>Needs review</small>
+
+                </div>
+
+            </div>
+
+
+            <div class="stat-card success">
+
+                <div class="stat-icon green">✓</div>
+
+                <div>
+
+                    <span>Low Priority</span>
+
+                    <strong id="lowCases">0</strong>
+
+                    <small>Lower urgency</small>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- MAIN GRID -->
+
+        <section class="dashboard-grid">
+
+
+            <!-- CASE LIST -->
+
+            <div class="panel cases-panel">
+
+                <div class="panel-header">
+
+                    <div>
+
+                        <span class="section-label">LIVE QUEUE</span>
+
+                        <h2>Cases Requiring Attention</h2>
+
+                    </div>
+
+                    <span class="live-badge">
+                        ● LIVE
+                    </span>
+
+                </div>
+
+
+                <div class="case-list" id="caseList"></div>
+
+            </div>
+
+
+            <!-- CASE DETAILS -->
+
+            <div class="panel details-panel">
+
+                <div class="panel-header">
+
+                    <div>
+
+                        <span class="section-label">CASE ANALYSIS</span>
+
+                        <h2>Officer Review</h2>
+
+                    </div>
+
+                    <span class="case-id" id="selectedId">
+                        NHAA-1001
+                    </span>
+
+                </div>
+
+
+                <div id="caseDetails">
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- BOTTOM MESSAGE -->
+
+        <div class="trust-banner">
+
+            <div class="shield">🛡</div>
+
+            <div>
+
+                <strong>AI ASSISTANCE — HUMAN DECISION</strong>
+
+                <p>
+                    The system identifies potential distress indicators
+                    to support prioritization. It does not provide a
+                    medical or psychological diagnosis.
+                </p>
+
+            </div>
+
+            <div class="arrow">→</div>
+
+        </div>
+
+
+        <footer>
+
+            NHAA 14566 • Officer Assistance Prototype
+            <span>Secure • Human-led • AI-assisted</span>
+
+        </footer>
+
+    </main>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

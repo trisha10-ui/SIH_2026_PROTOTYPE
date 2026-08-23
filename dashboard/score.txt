@@ -1,0 +1,20 @@
+Message: I am worried about my complaint and feel very nervous.
+Score: 4/10
+Stress Level: Low
+Indicators: worried, nervous
+--------------------------------------------------
+Message: I am scared and feel unsafe.
+Score: 6/10
+Stress Level: Medium
+Indicators: scared, unsafe
+--------------------------------------------------
+Message: I am confused about what will happen.
+Score: 1/10
+Stress Level: Low
+Indicators: confused
+--------------------------------------------------
+Message: I feel overwhelmed and helpless.
+Score: 4/10
+Stress Level: Low
+Indicators: helpless, overwhelmed
+--------------------------------------------------
