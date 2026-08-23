@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NHAA Support Portal</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+    <div class="container mt-5" style="max-width: 500px;">
+    <h3 class="mb-3">How are you feeling today?</h3>
+    <textarea id="msgBox" class="form-control" rows="5" placeholder="Type here..."></textarea>
+    <button class="btn btn-primary mt-3 w-100" onclick="saveMessage()">Submit</button>
+    <p id="status" class="mt-2 text-success"></p>
+    </div>
+
+    <script>
+        function saveMessage(){
+            const text=document.getElementById("msgBox").value;
+            if(!text.trim())
+        {
+            alert("Please type a message first.");
+            return;
+        }
+
+        //save the text as messages.txt
+        const blob=new Blob([text],{
+            type:"text/plain"
+        });
+        const link=document.createElement("a");
+        link.href=URL.createObjectURL(blob);
+        link.download="messages.txt";
+        link.click();
+
+        document.getElementById("status").innerText="Message saved as Messages.txt ";
+        }
+    </script>
+</body>
+</html>
