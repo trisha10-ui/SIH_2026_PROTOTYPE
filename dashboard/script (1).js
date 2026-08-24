@@ -11,8 +11,8 @@ async function loadScores() {
 
     try {
 
-        const response = await fetch("score.txt");
-
+       // Adds a timestamp so the browser is forced to fetch the newest version
+const response = await fetch("score.txt?t=" + new Date().getTime());
         if (!response.ok) {
             throw new Error("score.txt not found");
         }
@@ -1009,3 +1009,6 @@ function renderReviewHistory() {
 setupNavigation();
 
 loadScores();
+
+// Automatically reload the scores every 3 seconds
+setInterval(loadScores, 3000);
